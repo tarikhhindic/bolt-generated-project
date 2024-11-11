@@ -1,0 +1,45 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    .header {
+      @apply text-2xl font-bold text-white;
+    }
+
+    .file-name {
+      @apply text-lg font-semibold text-purple-400;
+    }
+
+    .technical-info {
+      @apply text-sm font-medium text-gray-400;
+    }
+
+    .ui-label {
+      @apply text-xs font-normal text-gray-300;
+    }
+
+    .panel {
+      @apply bg-gray-800 p-4 rounded-lg shadow-md;
+    }
+
+    .collapsible {
+      @apply transition-all duration-300 ease-in-out;
+    }
+
+    .focus-visible {
+      @apply outline-none ring-2 ring-purple-500;
+    }
+
+    .hover\:bg-gray-700:hover {
+      @apply bg-gray-700;
+    }
+
+    .active\:bg-gray-600:active {
+      @apply bg-gray-600;
+    }
